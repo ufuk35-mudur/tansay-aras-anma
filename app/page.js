@@ -40,7 +40,7 @@ export default async function Home() {
             
             <h1 className="name-title">TANSAY ARAS</h1>
             <div className="date-line">(xxxx - 22/01/2026)</div>
-            <div className="memorial-quote">"Sonsuz sevgi ve özlemle anıyoruz..."</div>
+            <div className="memorial-quote">&quot;Sonsuz sevgi ve özlemle anıyoruz...&quot;</div>
         </header>
 
         {/* ================= HAYAT HİKAYESİ ================= */}
@@ -81,7 +81,7 @@ export default async function Home() {
             <div className="memorial-box">
                 <h2 className="section-title">Anma Kutusu</h2>
                 <div className="memorial-box-quote">
-                    "Onu daima güler yüzü ve engin sevgisiyle hatırlayacağız..."
+                    &quot;Onu daima güler yüzü ve engin sevgisiyle hatırlayacağız...&quot;
                 </div>
             </div>
         </div>
