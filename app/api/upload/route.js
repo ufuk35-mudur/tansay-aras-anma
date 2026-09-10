@@ -9,8 +9,7 @@ export async function POST(request) {
   // process.env.BLOB_READ_WRITE_TOKEN otomatik olarak Vercel tarafından sağlanır
   try {
       const blob = await put(filename, request.body, {
-        access: 'public',
-        token: 'vercel_blob_rw_7scSW8M0W9AIAZoW_W8w42HNEwhwwCTfZv3nSENuoFDKq5X'
+        access: 'public'
       });
     
       return NextResponse.json(blob);

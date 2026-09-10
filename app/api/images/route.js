@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    const { blobs } = await list({ token: 'vercel_blob_rw_7scSW8M0W9AIAZoW_W8w42HNEwhwwCTfZv3nSENuoFDKq5X' });
+    const { blobs } = await list();
     return NextResponse.json(blobs);
   } catch (error) {
     return NextResponse.json({ error: error.message || 'Failed to fetch blobs', stack: error.stack }, { status: 500 });

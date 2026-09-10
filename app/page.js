@@ -5,7 +5,7 @@ export default async function Home() {
   
   // Try to fetch images from Vercel Blob
   try {
-      const { blobs } = await list({ token: "vercel_blob_rw_7scSW8M0W9AIAZoW_W8w42HNEwhwwCTfZv3nSENuoFDKq5X" });
+      const { blobs } = await list();
       images = blobs.map(blob => blob.url);
   } catch (error) {
 
