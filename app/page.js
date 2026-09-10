@@ -30,7 +30,7 @@ export default async function Home() {
             </div>
             
             <h1 className="name-title">TANSAY ARAS</h1>
-            <div className="date-line">(xxxx - 22/01/2026)</div>
+            <div className="date-line">(10.04.1952 - 22.01.2026)</div>
             <div className="memorial-quote">&quot;Sonsuz sevgi ve özlemle anıyoruz...&quot;</div>
         </header>
 
