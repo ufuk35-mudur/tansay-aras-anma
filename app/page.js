@@ -5,21 +5,10 @@ export default async function Home() {
   
   // Try to fetch images from Vercel Blob
   try {
-    // If BLOB_READ_WRITE_TOKEN is available, fetch from blob
-    if (process.env.BLOB_READ_WRITE_TOKEN) {
-      const { blobs } = await list();
+      const { blobs } = await list({ token: "vercel_blob_rw_7scSW8M0W9AIAZoW_W8w42HNEwhwwCTfZv3nSENuoFDKq5X" });
       images = blobs.map(blob => blob.url);
-    } else {
-      // Fallback for local development if token is not set
-      images = [
-        '/gallery1.jpg',
-        '/gallery2.png',
-        '/gallery3.png',
-        '/gallery4.png',
-        '/gallery5.png'
-      ];
-    }
   } catch (error) {
+
     console.error("Blob fetch error:", error);
     images = [
         '/gallery1.jpg',
