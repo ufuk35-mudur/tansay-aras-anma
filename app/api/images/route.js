@@ -6,6 +6,6 @@ export async function GET() {
     const { blobs } = await list({ token: 'vercel_blob_rw_7scSW8M0W9AIAZoW_W8w42HNEwhwwCTfZv3nSENuoFDKq5X' });
     return NextResponse.json(blobs);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch blobs' }, { status: 500 });
+    return NextResponse.json({ error: error.message || 'Failed to fetch blobs', stack: error.stack }, { status: 500 });
   }
 }

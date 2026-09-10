@@ -16,6 +16,6 @@ export async function POST(request) {
       return NextResponse.json(blob);
   } catch (error) {
       console.error(error);
-      return NextResponse.json({ error: 'Yükleme başarısız. Vercel Blob ayarlarını kontrol edin.' }, { status: 500 });
+      return NextResponse.json({ error: error.message || 'Bilinmeyen hata', stack: error.stack }, { status: 500 });
   }
 }
