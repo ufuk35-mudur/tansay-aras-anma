@@ -1,5 +1,7 @@
 import { list } from '@vercel/blob';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   let images = [];
   
